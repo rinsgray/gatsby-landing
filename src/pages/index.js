@@ -7,5 +7,6 @@ export default function Home() {
     <Header headerText="This home page" />
     <Link to = '/contact/'><p>Contact</p></Link>
     <Link to = '/about/'><p>About Us</p></Link>
+    <img src="http://source.unsplash.com/random/640x800"/>
   </div>
 }
