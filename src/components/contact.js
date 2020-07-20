@@ -9,4 +9,5 @@ export default function Contact() {
       <Link to = '/'> Home </Link>
     </div>
   )
+  
 }
