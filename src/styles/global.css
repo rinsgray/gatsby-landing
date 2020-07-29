@@ -2,18 +2,6 @@ html {
   background-color: #E8FB71;
 }
 
-.indeximg{
-  position: relative;
-  margin-left: 25%;
-  margin-top: 150px;
-  text-align: left
-}
-
-.textimg{
-  text-align: left;
-  font-size: 20px;
-}
-
 .indexhdr{
   position: fixed;
   margin: 110px;

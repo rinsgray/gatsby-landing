@@ -21,6 +21,5 @@ export default function Contact() {
       <Header headerText="Contact" />
       <Link to = '/'> Home </Link>
     </div>
-
   )
 }
