@@ -1,0 +1,10 @@
+.indexhdr{
+  position: fixed;
+  margin: 110px;
+  width: 10%;
+}
+
+.menu{
+   margin: 100px;
+   padding: 2px;
+}
