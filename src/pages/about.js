@@ -6,10 +6,10 @@ import { Link } from "gatsby"
 export default function About() {
   return (
     <Container>
-    <div style={{ color: 'teal' }}>
+    <div style={{ color: 'black' }}>
     <Header headerText = 'About Gatsby' />
       <p>Such wow. Very React.</p>
-    <Link to='/'> Home </Link>
+    <Link to='/'><p>Home</p></Link>
     </div>
     </Container>
   )

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import Container from "../components/container"
 import styles from "./index.module.css"
-
+import Layout from "../components/layout"
 
 const Artwork = props => (
 <div className = {styles.artwork}>
@@ -13,17 +13,16 @@ const Artwork = props => (
 )
 
 export default function Home() {
-  return <div style={{ color: 'teal' }}>
-    <div class="indexhdr">
-      <Header headerText="This home page"/>
-      <Link to = '/contact/'><p>Contact</p></Link>
-      <Link to = '/about/'><p>About Us</p></Link>
-    </div>
+  return(
 
+  <Layout>
+
+    <div class="image_top">
     <Artwork
       image = "http://source.unsplash.com/random/640x400"
       description = "Очень известный фотограф"
     />
+    </div>
     <Artwork
       image = "http://source.unsplash.com/random/640x460"
       description = "Чуть менее известный фотограф"
@@ -34,7 +33,6 @@ export default function Home() {
     />
 
 
-
-
-  </div>
+  </Layout>
+)
 }

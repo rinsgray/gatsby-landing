@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/header"
 import styles from "./contact.module.css"
+import Container from "../components/container"
 
 console.log(styles)
 
@@ -17,9 +18,11 @@ const User = props => (
 
 export default function Contact() {
   return (
+    <Container>
     <div style={{ color: 'teal' }}>
       <Header headerText="Contact" />
-      <Link to = '/'> Home </Link>
+      <Link to = '/'><p>Home</p></Link>
     </div>
+    </Container>
   )
 }
