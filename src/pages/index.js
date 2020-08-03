@@ -15,7 +15,7 @@ const Artwork = props => (
 export default function Home() {
   return(
 
-  <Layout>
+  <Layout header="Test Page">
 
     <div class="image_top">
     <Artwork
