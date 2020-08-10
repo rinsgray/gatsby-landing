@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import styles from "./contact.module.css"
 import Container from "../components/container"
+import Layout from "../components/layout"
 
 console.log(styles)
 
@@ -18,11 +19,11 @@ const User = props => (
 
 export default function Contact() {
   return (
+    <Layout header="Contact">
     <Container>
     <div style={{ color: 'teal' }}>
-      <Header headerText="Contact" />
-      <Link to = '/'><p>Home</p></Link>
     </div>
     </Container>
+    </Layout>
   )
 }

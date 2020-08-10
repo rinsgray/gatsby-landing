@@ -4,6 +4,7 @@ import Header from "../components/header"
 import Container from "../components/container"
 import styles from "./index.module.css"
 import Layout from "../components/layout"
+import { graphql } from "gatsby"
 
 
 const Artwork = props => (
@@ -15,10 +16,10 @@ const Artwork = props => (
 </div>
 )
 
-export default function Home() {
+export default function Home({data}) {
   return(
 
-  <Layout header="Test Page">
+  <Layout header={data.site.siteMetadata.title}>
 
     <Artwork
       image = "http://source.unsplash.com/random/640x400"
@@ -37,3 +38,12 @@ export default function Home() {
   </Layout>
 )
 }
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
