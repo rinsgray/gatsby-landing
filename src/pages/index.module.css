@@ -1,14 +1,15 @@
 .indeximg{
   position: relative;
-  margin-left: 25%;
-  margin-top: 150px;
-  text-align: left
+  box-shadow: 10px 8px 10px 4px rgba(0,0,0,0.3);
 }
 
 .textimg{
-  text-align: right;
-  font-size: 20px;
-  padding-right: 25%;
-  padding-top: 10px;
-  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+}
+
+.block{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 15%;
+  padding-bottom: 100px;
 }

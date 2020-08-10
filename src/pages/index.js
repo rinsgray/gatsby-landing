@@ -5,10 +5,13 @@ import Container from "../components/container"
 import styles from "./index.module.css"
 import Layout from "../components/layout"
 
+
 const Artwork = props => (
 <div className = {styles.artwork}>
+  <div className={styles.block}>
   <img src = {props.image} className = {styles.indeximg}/>
   <div className = {styles.textimg}> {props.description}</div>
+  </div>
 </div>
 )
 
@@ -17,12 +20,10 @@ export default function Home() {
 
   <Layout header="Test Page">
 
-    <div class="image_top">
     <Artwork
       image = "http://source.unsplash.com/random/640x400"
       description = "Очень известный фотограф"
     />
-    </div>
     <Artwork
       image = "http://source.unsplash.com/random/640x460"
       description = "Чуть менее известный фотограф"

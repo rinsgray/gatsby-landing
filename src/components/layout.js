@@ -6,13 +6,13 @@ import layoutStyles from "./layout.module.css"
 export default function Layout(props) {
   return (
     <div>
-    <div class='indexhdr'>
+    <div className={layoutStyles.indexhdr}>
       <Header headerText={props.header} />
       <Link to = '/'><p>Home</p></Link>
       <Link to = '/contact/'><p>Contact</p></Link>
       <Link to = '/about/'><p>About Us</p></Link>
     </div>
-    <div class='menu'>
+    <div className={layoutStyles.children}>
       {props.children}
     </div>
     </div>
